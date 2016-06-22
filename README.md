@@ -8,11 +8,11 @@ Make it look better for mobile
 
 Make "subreddit" filter
 
-Add a limit on how often you can post(Can only post every 10 min)
+Add a limit on how often you can post(Can only post every 10 min) [check]
 
-Make it so you cannot post empty comments nor empty questions 
+Make it so you cannot post empty comments nor empty questions [check/ comments still need to fixed]
 
-Make about page
+Make about page [check]
 
 Setup with heroku
 
