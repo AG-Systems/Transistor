@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   resources :comments
   get 'home/index'
-
+  get '/about' => 'home#about'
+  get '/dating' => 'posts#dating'
+  get '/career' => 'posts#career'
   devise_for :users
   resources :posts do 
     member do
