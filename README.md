@@ -6,7 +6,7 @@ Todo:
 
 Make it look better for mobile
 
-Make "subreddit" filter
+Make "subreddit" filter [check]
 
 Add a limit on how often you can post(Can only post every 10 min) [check]
 
