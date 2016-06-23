@@ -4,10 +4,14 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
-    
+      @posts = Post.all.reverse
   end
-
+  def dating
+      @posts = Post.all.reverse
+  end
+  def career
+      @posts = Post.all.reverse
+  end
   # GET /posts/1
   # GET /posts/1.json
   def show
@@ -21,12 +25,11 @@ class PostsController < ApplicationController
   # GET /posts/1/edit
   def edit
   end
-
+  
   # POST /posts
   # POST /posts.json
   def create
     @post = current_user.post.build(post_params)
-
     respond_to do |format|
       if @post.save
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
@@ -77,9 +80,11 @@ class PostsController < ApplicationController
     def set_post
       @post = Post.find(params[:id])
     end
-
+    def find_dating
+      Post.find(params[:cater_id])
+    end
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :question)
+      params.require(:post).permit(:title, :question, :cater)
     end
 end

@@ -19,6 +19,11 @@
   <%= f.label :question %><br>
   <%= f.text_field :question, class: "form-control" %>
 </div>
+<div class="form-group">
+  <b>Community</b></b>
+  <br>
+  <%= f.select :cater, ['All', 'Dating', 'Career'] , class: "form-control" %>
+</div>
 <br>
 <div class="form-group">
   <%= f.submit "Submit", class: "btn btn-lg btn-primary" %>
