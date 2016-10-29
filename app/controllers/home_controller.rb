@@ -7,4 +7,6 @@ class HomeController < ApplicationController
   end
   def dating
   end
+  
+  # need to make more for all of the other categories
 end
